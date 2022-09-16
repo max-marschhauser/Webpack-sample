@@ -1,1 +1,11 @@
 još treba dodati automatsko provjeravanje promjena u src fileovima i onda ih automatski prebaciti u dist i displayati na stranici
+
+"copy:img": "copyfiles -u 1 ./src/img/**/\* public",
+"copy:scripts": "copyfiles -u 1 ./src/scripts/**/\*.js public",
+
+        "watch:img": "onchange \"src/img/**/*\" -- npm run copy:img",
+    	"watch:scripts": "onchange \"src/scripts/**/*.js\" -- npm run copy:scripts",
+    	"watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+
+
+    	prvi puta se u dist doda script tag kako treba, ali kad se dogodi promjena u src html, onda se kopira taj file ali bez script taga
