@@ -1,4 +1,5 @@
-const x = document.querySelector("[data-img]");
-x.src = "./src/assets/folder/dog.jpg";
+/*import imgName from "./folder/imgName.jpg";
 
-// još treba popraviti slike, pogeldati ponovno pred kraj videa
+const image1 = document.querySelector("[data-img]");
+image1.src = imageName;
+*/
