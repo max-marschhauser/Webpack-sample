@@ -8,7 +8,7 @@ module.exports = {
 	},
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		filename: "[name][contenthash].js", // može se maknuti [contenthast] ako ne želim da bude cashing i hash kod imena filea
+		filename: "[name].js", // može se dodati [contenthash] između [name] i .js ako ne želim da bude cashing i hash kod imena filea
 		clean: true,
 		assetModuleFilename: "[name][ext]",
 	},
@@ -47,9 +47,8 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: "Webpack App", // change title here or delete and change title in html file
 			filename: "index.html",
-			template: "src/template.html",
+			template: "src/index.html",
 		}),
 	],
 };
