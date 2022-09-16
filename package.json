@@ -1,5 +1,6 @@
 {
 	"name": "webpack-sample",
+	"author": "Max Marschhauser, max.marschhauser@gmail.com",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
@@ -12,7 +13,6 @@
 		"url": "git+https://github.com/max-marschhauser/Webpack-sample.git"
 	},
 	"keywords": [],
-	"author": "",
 	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/max-marschhauser/Webpack-sample/issues"
@@ -22,6 +22,8 @@
 		"@babel/core": "^7.19.1",
 		"@babel/preset-env": "^7.19.1",
 		"babel-loader": "^8.2.5",
+		"browser-sync": "^2.27.10",
+		"browser-sync-webpack-plugin": "^2.3.0",
 		"css-loader": "^6.7.1",
 		"html-webpack-plugin": "^5.5.0",
 		"sass": "^1.54.9",
